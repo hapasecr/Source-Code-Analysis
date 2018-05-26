@@ -1,0 +1,51 @@
+digraph "call-graph" {
+    "<testers.CallGraphs: void main(java.lang.String[])>"
+    "<java.lang.Object: void <clinit>()>"
+    "<testers.CallGraphs: void main(java.lang.String[])>"->"<java.lang.Object: void <clinit>()>";
+    "<testers.CallGraphs: void doStuff()>"
+    "<testers.CallGraphs: void main(java.lang.String[])>"->"<testers.CallGraphs: void doStuff()>";
+    "<testers.CallGraphs: void doStuff()>"->"<java.lang.Object: void <clinit>()>";
+    "<testers.Operations: int mul(int,int)>"
+    "<testers.CallGraphs: void doStuff()>"->"<testers.Operations: int mul(int,int)>";
+    "<testers.Operations: int sub(int,int)>"
+    "<testers.CallGraphs: void doStuff()>"->"<testers.Operations: int sub(int,int)>";
+    "<testers.Operations: int add(int,int)>"
+    "<testers.CallGraphs: void doStuff()>"->"<testers.Operations: int add(int,int)>";
+    "<testers.CallGraphs: void doStuff()>"->"<java.lang.Object: void <clinit>()>";
+    "<testers.CallGraphs: void doStuff()>"->"<java.lang.Object: void <clinit>()>";
+    "<java.lang.System: void <clinit>()>"
+    "<testers.CallGraphs: void doStuff()>"->"<java.lang.System: void <clinit>()>";
+    "<testers.CallGraphs: void doStuff()>"->"<java.lang.Object: void <clinit>()>";
+    "<testers.CallGraphs: void doStuff()>"->"<java.lang.Object: void <clinit>()>";
+    "<testers.CallGraphs: void doStuff()>"->"<java.lang.Object: void <clinit>()>";
+    "<testers.CallGraphs: void doStuff()>"->"<java.lang.Object: void <clinit>()>";
+    "<testers.CallGraphs: void doStuff()>"->"<java.lang.System: void <clinit>()>";
+    "<testers.CallGraphs: void doStuff()>"->"<java.lang.Object: void <clinit>()>";
+    "<testers.CallGraphs: void doStuff()>"->"<java.lang.Object: void <clinit>()>";
+    "<testers.CallGraphs: void doStuff()>"->"<java.lang.Object: void <clinit>()>";
+    "<testers.CallGraphs: void doStuff()>"->"<java.lang.Object: void <clinit>()>";
+    "<testers.CallGraphs: void doStuff()>"->"<java.lang.System: void <clinit>()>";
+    "<testers.CallGraphs: void doStuff()>"->"<java.lang.Object: void <clinit>()>";
+    "<testers.Operations: void <init>()>"
+    "<testers.CallGraphs: void doStuff()>"->"<testers.Operations: void <init>()>";
+    "<java.lang.StringBuilder: void <init>(java.lang.String)>"
+    "<testers.CallGraphs: void doStuff()>"->"<java.lang.StringBuilder: void <init>(java.lang.String)>";
+    "<java.lang.StringBuilder: java.lang.StringBuilder append(int)>"
+    "<testers.CallGraphs: void doStuff()>"->"<java.lang.StringBuilder: java.lang.StringBuilder append(int)>";
+    "<java.lang.StringBuilder: java.lang.String toString()>"
+    "<testers.CallGraphs: void doStuff()>"->"<java.lang.StringBuilder: java.lang.String toString()>";
+    "<java.io.PrintStream: void println(java.lang.String)>"
+    "<testers.CallGraphs: void doStuff()>"->"<java.io.PrintStream: void println(java.lang.String)>";
+    "<testers.CallGraphs: void doStuff()>"->"<testers.Operations: void <init>()>";
+    "<testers.CallGraphs: void doStuff()>"->"<java.lang.StringBuilder: void <init>(java.lang.String)>";
+    "<testers.CallGraphs: void doStuff()>"->"<java.lang.StringBuilder: java.lang.StringBuilder append(int)>";
+    "<testers.CallGraphs: void doStuff()>"->"<java.lang.StringBuilder: java.lang.String toString()>";
+    "<testers.CallGraphs: void doStuff()>"->"<java.io.PrintStream: void println(java.lang.String)>";
+    "<testers.CallGraphs: void doStuff()>"->"<testers.Operations: void <init>()>";
+    "<testers.CallGraphs: void doStuff()>"->"<java.lang.StringBuilder: void <init>(java.lang.String)>";
+    "<testers.CallGraphs: void doStuff()>"->"<java.lang.StringBuilder: java.lang.StringBuilder append(int)>";
+    "<testers.CallGraphs: void doStuff()>"->"<java.lang.StringBuilder: java.lang.String toString()>";
+    "<testers.CallGraphs: void doStuff()>"->"<java.io.PrintStream: void println(java.lang.String)>";
+    "<java.lang.Object: void <init>()>"
+    "<testers.Operations: void <init>()>"->"<java.lang.Object: void <init>()>";
+}

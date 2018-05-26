@@ -1,0 +1,15 @@
+digraph "call-graph" {
+    "<testers.CallGraphs: void main(java.lang.String[])>"
+    "<testers.CallGraphs: void doStuff()>"
+    "<testers.CallGraphs: void main(java.lang.String[])>"->"<testers.CallGraphs: void doStuff()>";
+    "<testers.Operations: int mul(int,int)>"
+    "<testers.CallGraphs: void doStuff()>"->"<testers.Operations: int mul(int,int)>";
+    "<testers.Operations: int sub(int,int)>"
+    "<testers.CallGraphs: void doStuff()>"->"<testers.Operations: int sub(int,int)>";
+    "<testers.Operations: int add(int,int)>"
+    "<testers.CallGraphs: void doStuff()>"->"<testers.Operations: int add(int,int)>";
+    "<testers.Operations: void <init>()>"
+    "<testers.CallGraphs: void doStuff()>"->"<testers.Operations: void <init>()>";
+    "<testers.CallGraphs: void doStuff()>"->"<testers.Operations: void <init>()>";
+    "<testers.CallGraphs: void doStuff()>"->"<testers.Operations: void <init>()>";
+}
